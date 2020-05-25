@@ -1,6 +1,9 @@
 # Vendetta-team-site
 Vendetta Team Site  
 
+Version
+--------------
+Beta  
 Host on Glitch
 -----------------------
 https://vendetta-team.glitch.me/  
