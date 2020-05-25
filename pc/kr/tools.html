@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Vendetta</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta property="og:title" content="Vendetta">
+    <meta property="og:description" content="Vendetta Team">
+    <meta property="og:image"
+        content="https://cdn.glitch.com/a0de9485-b4ff-4c86-9e6f-5fd29484ad35%2Fv.png?v=1589267590471">
+    <meta property="og:url" content="https://vendetta-team.glitch.me">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Vendetta">
+    <link rel="icon" href="https://cdn.glitch.com/a0de9485-b4ff-4c86-9e6f-5fd29484ad35%2Fv.png?v=1589267590471"
+        type="image/x-icon" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.4/semantic.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.4/semantic.min.js"></script>
+
+</head>
+
+<body
+    style="background-color: #cecece; background-image: url(https://cdn.pixabay.com/photo/2019/10/21/21/56/dew-4567294_960_720.jpg);">
+    <div class="ui active dimmer" id="loading" style="position: fixed;">
+        <div class="ui massive text loader">Loading..</div>
+    </div>
+
+    <style>
+        #image {
+            background-image: url("https://cdn.pixabay.com/photo/2014/05/26/14/45/rain-354617_960_720.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            padding-bottom: 50px
+        }
+
+        #end {
+            background-color: black
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 15px 0;
+            text-align: center;
+            color: white;
+            background: black;
+        }
+    </style>
+
+    <nav id="#top">
+        <div class="ui inverted fixed top menu">
+            <div class="ui item">
+                <img src="https://cdn.glitch.com/a0de9485-b4ff-4c86-9e6f-5fd29484ad35%2Fv.png?v=1589267590471">
+            </div>
+            <a class="ui item" href="https://vendetta-team.glitch.me/"><i class="star outline icon"></i>메인</a>
+            <a class="ui item" href="https://discord.gg/uF9bsPA"><i class="discord icon"></i>디스코드</a>
+            <a class="ui item"
+                href="https://discord.com/oauth2/authorize?client_id=518657304795676693&scope=bot&permissions=8"><i
+                    class="robot icon"></i>WBOT</a>
+            <div class="ui inverted right simple dropdown item">
+                <i class="kr flag"></i>한국어
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                    <div class="item" onclick="en()"><i class="us flag"></i>English</div>
+                    <div class="item" onclick="kr()"><i class="kr flag"></i>한국어</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id='image'>
+        <section>
+            <section>
+                <br>
+                <h2 class="ui center aligned icon header">
+                    <img src="https://cdn.glitch.com/a0de9485-b4ff-4c86-9e6f-5fd29484ad35%2Fv.png?v=1589267590471"
+                        class="rounded-circle" alt="Cinque Terre"
+                        style="color: rgb(72, 71, 179); box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);">
+                    <br>
+                    <br>
+                    <a href="https://discord.gg/uF9bsPA"
+                        style="box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);color: rgb(224, 220, 220);">&nbsp&nbspVendetta
+                        Discord Bot Tools.&nbsp&nbsp</a>
+                </h2>
+                <br>
+                <br>
+            </section>
+        </section>
+        <section>
+            <hr>
+            <br>
+            <br>
+            <center>
+                <h2 class="ui center header" style="padding: 15px 0;">
+                    <i class="circular question icon"
+                        style="background-color: rgba(255, 255, 255, 0.37);border:1px solid rgb(0, 0, 0);"></i>
+                    <br>
+                    <div class="content"
+                        style="height: auto; width: auto; box-shadow: inset 0 0 0 1000px rgba(245, 242, 242, 0.657); border:1px solid rgb(0, 0, 0);">
+                        Vendetta Discord Bot Tools 가 뭔가요?
+                        <div class="sub header" style="box-shadow: inset 0 0 0 1000px rgba(250, 250, 250, 0.657);">코딩을
+                            모르는
+                            분들도 코딩을 쉽게 하실수 있도록 제작된 Vendetta팀의 프로그램입니다.</div>
+                    </div>
+                </h2>
+                <br><br>
+            </center>
+        </section>
+        <section>
+            <br><br>
+            <hr>
+            <section>
+                <center>
+                    <h2 class="ui center header" style="padding: 15px 0;">
+                        <br>
+                        <div class="content"
+                            style="height: auto; width: auto; box-shadow: inset 0 0 0 1000px rgba(245, 242, 242, 0.657); border:1px solid rgb(0, 0, 0);">
+                            Vendetta Discord Bot Tools 내부
+                            <div class="sub header" style="box-shadow: inset 0 0 0 1000px rgba(250, 250, 250, 0.657);">
+                                이미지를 클릭하시면 더 큰 화면으로 보실수 있습니다
+                            </div>
+                        </div>
+                    </h2>
+                    <br>
+                </center>
+            </section>
+            <section>
+                <section>
+                    <center>
+                        <div style="width: 90%;display: flex;">
+                            <div class="ui inverted card" style="float: left;margin-left: 5%; height: 7.5cm;">
+                                <a class="image" style="background-color: rgba(0, 0, 0, 0);"
+                                    href="https://cdn.glitch.com/a0de9485-b4ff-4c86-9e6f-5fd29484ad35%2Fda5aacf4-ab18-42da-b9dd-f95b90d53c0c.image.png?v=1589448233925"
+                                    target="_blank">
+                                    <img
+                                        src="https://cdn.glitch.com/a0de9485-b4ff-4c86-9e6f-5fd29484ad35%2Fda5aacf4-ab18-42da-b9dd-f95b90d53c0c.image.png?v=1589448233925">
+                                </a>
+                                <div class="content">
+                                    <a class="header">로그인</a>
+                                    <div class="meta">
+                                        <a>봇에 로그인을 하는 곳입니다.</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui inverted card" style="float: left;margin-left: 5%; height: 7.5cm;">
+                                <a class="image" style="background-color: rgba(0, 0, 0, 0);"
+                                    href="https://cdn.glitch.com/a0de9485-b4ff-4c86-9e6f-5fd29484ad35%2F51150b08-b5b4-4213-8d25-f206c462119b.image.png?v=1589448561474"
+                                    target="_blank">
+                                    <img
+                                        src="https://cdn.glitch.com/a0de9485-b4ff-4c86-9e6f-5fd29484ad35%2F51150b08-b5b4-4213-8d25-f206c462119b.image.png?v=1589448561474">
+                                </a>
+                                <div class="content">
+                                    <a class="header">메인</a>
+                                    <div class="meta">
+                                        <a>봇에 기능들을 설정할수 있는 곳입니다.</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui inverted card" style="float: left;margin-left: 5%; height: 7.5cm;">
+                                <a class="image" style="background-color: rgba(0, 0, 0, 0);"
+                                    href="https://cdn.glitch.com/a0de9485-b4ff-4c86-9e6f-5fd29484ad35%2F418d7667-fa68-4e73-aa95-66ed213dea4a.image.png?v=1589448644503"
+                                    target="_blank">
+                                    <img
+                                        src="https://cdn.glitch.com/a0de9485-b4ff-4c86-9e6f-5fd29484ad35%2F418d7667-fa68-4e73-aa95-66ed213dea4a.image.png?v=1589448644503">
+                                </a>
+                                <div class="content">
+                                    <a class="header">커맨드</a>
+                                    <div class="meta">
+                                        <a>봇의 명령어를 추가하는 곳입니다.</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui inverted card" style="float: left;margin-left: 5%; height: 7.7cm;">
+                                <a class="image" style="background-color: rgba(0, 0, 0, 0);" target="_blank"
+                                    href="https://cdn.glitch.com/a0de9485-b4ff-4c86-9e6f-5fd29484ad35%2Ff54c29d3-fd3b-4b38-a61f-274afd6f30c5.image.png?v=1589448769186">
+                                    <img
+                                        src="https://cdn.glitch.com/a0de9485-b4ff-4c86-9e6f-5fd29484ad35%2Ff54c29d3-fd3b-4b38-a61f-274afd6f30c5.image.png?v=1589448769186">
+                                </a>
+                                <div class="content">
+                                    <a class="header">이벤트</a>
+                                    <div class="meta">
+                                        <a>봇의 이벤트를 수정하는곳입니다.<br>[제작중]</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </center>
+                </section>
+                <section>
+                    <center>
+                        <div style="width:90%;display:flex;">
+                            <div class="ui inverted card" style="float: left;margin-left: 5%; height: 7.9cm;">
+                                <a class="image" style="background-color: rgba(0, 0, 0, 0);" target="_blank"
+                                    href="https://cdn.glitch.com/a0de9485-b4ff-4c86-9e6f-5fd29484ad35%2F9549ac74-d583-488b-b591-c26f40d08ac7.image.png?v=1589448876018">
+                                    <img
+                                        src="https://cdn.glitch.com/a0de9485-b4ff-4c86-9e6f-5fd29484ad35%2F9549ac74-d583-488b-b591-c26f40d08ac7.image.png?v=1589448876018">
+                                </a>
+                                <div class="content">
+                                    <a class="header">봇설정</a>
+                                    <div class="meta">
+                                        <a>봇에 대한 기본정보를 수정하는곳입니다.</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui inverted card" style="float: left;margin-left: 5%; height: 7.9cm;">
+                                <a class="image" style="background-color: rgba(0, 0, 0, 0);"
+                                    href="https://cdn.glitch.com/a0de9485-b4ff-4c86-9e6f-5fd29484ad35%2Fcf390494-4509-400f-b259-6caf3f6d8be3.image.png?v=1589449151727"
+                                    target="_blank">
+                                    <img
+                                        src="https://cdn.glitch.com/a0de9485-b4ff-4c86-9e6f-5fd29484ad35%2Fcf390494-4509-400f-b259-6caf3f6d8be3.image.png?v=1589449151727">
+                                </a>
+                                <div class="content">
+                                    <a class="header">봇초대</a>
+                                    <div class="meta">
+                                        <a>봇을 초대하는 링크를 오픈합니다.<br>[기본 브라우저로 연결됨]</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui inverted card" style="float: left;margin-left: 5%; height: 7.7cm;">
+                                <a class="image" style="background-color: rgba(0, 0, 0, 0);"
+                                    href="https://cdn.glitch.com/a0de9485-b4ff-4c86-9e6f-5fd29484ad35%2Fc6bf9fe8-07db-4383-aaad-2f1be3fda9a4.image.png?v=1589449375575"
+                                    target="_blank">
+                                    <img
+                                        src="https://cdn.glitch.com/a0de9485-b4ff-4c86-9e6f-5fd29484ad35%2Fc6bf9fe8-07db-4383-aaad-2f1be3fda9a4.image.png?v=1589449375575">
+                                </a>
+                                <div class="content">
+                                    <a class="header">서버</a>
+                                    <div class="meta">
+                                        <a>봇이 접속한 서버들을 보여줍니다.</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui inverted card" style="float: left;margin-left: 5%; height: 7.9cm;">
+                                <a class="image" style="background-color: rgba(0, 0, 0, 0);" target="_blank"
+                                    href="https://cdn.glitch.com/a0de9485-b4ff-4c86-9e6f-5fd29484ad35%2Fb586fbd2-a9c0-4666-be2e-f2290351ecb5.image.png?v=1589449440343">
+                                    <img
+                                        src="https://cdn.glitch.com/a0de9485-b4ff-4c86-9e6f-5fd29484ad35%2Fb586fbd2-a9c0-4666-be2e-f2290351ecb5.image.png?v=1589449440343">
+                                </a>
+                                <div class="content">
+                                    <a class="header">데이터베이스</a>
+                                    <div class="meta">
+                                        <a>봇이 저장한 데이터들을 보여줍니다<br>[제작중]</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </center>
+                </section>
+            </section>
+        </section>
+        <br>
+        <section>
+            <hr>
+            <br>
+            <br>
+            <center>
+                <h2 class="ui icon header">
+                    <i class="settings icon"></i>
+                    <div class="content"
+                        style="height: auto; width: auto; box-shadow: inset 0 0 0 1000px rgba(245, 242, 242, 0.657); border:1px solid rgb(0, 0, 0);">
+                        봇은 아직 개발단계입니다.
+                        <div class="sub header"
+                            style="height: auto; width: auto; box-shadow: inset 0 0 0 1000px rgba(245, 242, 242, 0.657); border:1px solid rgb(0, 0, 0);">
+                            아직 완전히 개발되진 않았지만 베타버전을 다운로드하여 사용하실 수 있습니다!<br>
+                        </div>
+                    </div>
+                </h2>
+            </center>
+            <center>
+                <a href="https://cdn.glitch.com/a0de9485-b4ff-4c86-9e6f-5fd29484ad35%2FSetup.exe?v=1589264705910" download>
+                    <button class="ui toggle button" style="border:1px solid rgb(0, 0, 0);">
+                        Download
+                    </button>
+                </a>
+                </center>
+            <br>
+            <br>
+        </section>
+    </section>
+    <section id="end">
+        <br><br>
+        <div class="inverted ui container">
+            <h1 class="inverted ui header">
+                <i class="map marker icon"></i>
+                <div class="content">
+                    Q&A
+                    <div class="sub header">
+                        자주 묻는 질문
+                    </div>
+                </div>
+            </h1>
+            <hr>
+            <div class="inverted ui list">
+                <div class="item">
+                    <i class="map marker icon"></i>
+                    <div class="content">
+                        <a class="header">디스코드가 뭔가요?</a>
+                        <div class="description">&nbsp&nbsp&nbsp&nbsp<i class="discord icon"></i>Discord는 음성, 영상, 텍스트로
+                            소통을 즐기는 가장 쉬운 방법입니다.<br>&nbsp&nbsp&nbsp&nbsp학교 동아리, 게임 새벽반, 세계 예술 감상 커뮤니티, 혹은 주변의 단짝 친구들과
+                            손쉽게 온라인으로 어울려보세요.
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="map marker icon"></i>
+                    <div class="content">
+                        <a class="header">Vendetta Team이 뭔가요?</a>
+                        <div class="description">&nbsp&nbsp&nbsp&nbspVendetta Team 은 디스코드 쳇봇을 제작하는 팀입니다.<i
+                                class="discord icon"></i><br>&nbsp&nbsp&nbsp&nbspVendetta Team의 봇은 디스코드로부터 인증받은
+                            봇이므로<br>&nbsp&nbsp&nbsp&nbsp안심하시고 사용이 가능합니다!</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="map marker icon"></i>
+                    <div class="content">
+                        <a class="header">Vendetta Discord Bot Tools이 뭔가요?</a>
+                        <div class="description">&nbsp&nbsp&nbsp&nbspVendetta Discord Bot tools는 천마 [Vendetta]#4120에 의해
+                            제작된 툴입니다.<br>&nbsp&nbsp&nbsp&nbsp이 툴을 이용하면 초보자분들도 손쉽게 봇을 제작할수 있습니다!</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="map marker icon"></i>
+                    <div class="content">
+                        <a class="header">WBOT이 뭔가요?</a>
+                        <div class="description">&nbsp&nbsp&nbsp&nbspWBOT은 천마 [Vendetta]#4120에 의해
+                            봇입니다<br>&nbsp&nbsp&nbsp&nbsp이봇은 디스코드에서 사용이 가능합니다!<br>&nbsp&nbsp&nbsp&nbsp이 봇은 관리,장난,음악,게임,로깅
+                            기능을 제공하고 있습니다</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+    </section>
+    <section>
+        <footer>
+            <div class="footer">
+                <p>Made by : 천마 [Vendetta]#4120</p>
+                <p>Site css : semantic-ui</p>
+            </div>
+        </footer>
+    </section>
+    <script>
+        window.scrollTo({ top: 0 });
+        $(window).on('load', function () {
+            $('#loading').transition('horizontal flip');
+        });
+    </script>
+</body>
+
+</html>

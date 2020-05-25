@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Vendetta Discord Bot tool</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Discord Bot tool by Vendetta">
+    <link rel="icon" href="https://cdn.glitch.com/a0de9485-b4ff-4c86-9e6f-5fd29484ad35%2Fv.png?v=1589267590471" type="image/x-icon" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.4/semantic.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.4/semantic.min.js"></script>
+</head>
+
+<body>
+    <style>
+        body {
+            min-height: 100%;
+        }
+
+        .footer {
+
+            position: fixed;
+
+            left: 0;
+
+            bottom: 0;
+
+            width: 100%;
+
+            padding: 15px 0;
+
+            text-align: center;
+
+            color: white;
+
+            background: black;
+
+        }
+    </style>
+    <div class="ui top fixed menu">
+            <div class="item">
+                <img src="https://cdn.glitch.com/a0de9485-b4ff-4c86-9e6f-5fd29484ad35%2Fv.png?v=1589267590471">
+            </div>
+        <a class="item" href="https://discord.gg/uF9bsPA">Discord</a>
+        <a class="item" href="https://cdn.glitch.com/a0de9485-b4ff-4c86-9e6f-5fd29484ad35%2FSetup.exe?v=1589264705910">Tools</a>
+        <a class="item" href="https://discord.com/oauth2/authorize?client_id=518657304795676693&scope=bot&permissions=8">WBOT</a>
+    </div>
+  <br><br><br><br><br>
+    <section>
+        <h2 class="ui center aligned icon header">
+            <i class="circular briefcase icon"></i>
+            Vendetta Discord Bot Tools
+        </h2>
+        <h2 class="ui center aligned icon header">
+            <i class="circular download icon"></i>
+            툴 다운로드 <a
+                href="https://cdn.glitch.com/a0de9485-b4ff-4c86-9e6f-5fd29484ad35%2FSetup.exe?v=1589264705910">Download</a>
+        </h2>
+        <h2 class="ui center aligned icon header">
+            <i class="circular discord icon"></i>
+            제작자 디스코드<a href="https://discord.gg/uF9bsPA">Vendetta</a>
+        </h2>
+    </section>
+    <div class="footer">
+        <p>Made by : 천마 [Vendetta]#4120</p>
+        <p>Site designer : semantic-ui</p>
+    </div>
+      <div class="ui active dimmer" id="loading">
+        <div class="ui massive text loader">Loading..</div>
+    </div>
+    <script>
+        $(window).on('load', function () {
+            $('#loading').transition('horizontal flip');
+        });
+    </script>
+</body>
+
+</html>

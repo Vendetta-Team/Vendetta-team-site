@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Vendetta Discord Bot tool</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Discord Bot tool by Vendetta">
+    <link rel="icon" href="https://cdn.glitch.com/a0de9485-b4ff-4c86-9e6f-5fd29484ad35%2Fv.png?v=1589267590471"
+        type="image/x-icon" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.4/semantic.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.4/semantic.min.js"></script>
+</head>
+
+<body>
+    <div class="ui active dimmer" id="loading">
+        <div class="ui massive text loader">Loading..</div>
+    </div>
+    <script>
+        var filter = "win16|win32|win64|mac|macintel";
+        const lang = localStorage.getItem('lang')
+        if (navigator.platform) {
+            if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
+                if (!lang) {
+                    console.log('1')
+                    location.href = "./m/en/main.html"
+                } else if (lang == "en") {
+                    console.log('2')
+                    location.href = "./m/en/main.html"
+                } else {
+                    console.log('3')
+                    location.href = "./m/kr/main.html"
+                }
+            } else {
+                if (!lang) {
+                    console.log('1')
+                    location.href = "./pc/en/main.html"
+                } else if (lang == "en") {
+                    console.log('2')
+                    location.href = "./pc/en/main.html"
+                } else {
+                    console.log('3')
+                    location.href = "./pc/kr/main.html"
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
