@@ -6,8 +6,7 @@
     <title>Vendetta</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=500, initial-scale=0.8 user-scalable=yes">
     <meta property="og:title" content="Vendetta">
     <meta property="og:description" content="Vendetta Team">
     <meta property="og:image"
@@ -72,6 +71,7 @@
             <a class="ui item"
                 href="https://discord.com/oauth2/authorize?client_id=518657304795676693&scope=bot&permissions=8"><i
                     class="robot icon"></i>WBOT</a>
+            <a class="ui item" href="https://github.com/Vendetta-Team"><i class="github icon"></i>Github</a>
             <div class="ui inverted right simple dropdown item">
                 <i class="us flag"></i>English
                 <i class="dropdown icon"></i>
@@ -216,17 +216,17 @@
         </footer>
     </section>
     <script>
-                function en() {
+        function en() {
             localStorage.setItem('lang', 'en')
         }
         function kr() {
             alert('이미 한국어입니다.')
         }
         setInterval(() => {
-            if(localStorage.getItem('lang') == "en"){
+            if (localStorage.getItem('lang') == "en") {
                 location.href = "../kr/main.html"
             }
-        },1000)
+        }, 1000)
         var filter = "win16|win32|win64|mac|macintel";
 
         if (navigator.platform) {
@@ -236,7 +236,7 @@
         }
         window.scrollTo({ top: 0 });
         $(window).on('load', function () {
-            if(localStorage.getItem('lang') == "en"){
+            if (localStorage.getItem('lang') == "en") {
                 location.href = "../kr/main.html"
             }
             $('#loading').transition('horizontal flip');

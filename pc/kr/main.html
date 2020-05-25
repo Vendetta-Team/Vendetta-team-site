@@ -61,7 +61,6 @@
             background: black;
         }
     </style>
-
     <nav id="#top">
         <div class="ui inverted fixed top menu">
             <div class="ui item">
@@ -75,6 +74,7 @@
             <a class="ui item"
                 href="https://cdn.glitch.com/a0de9485-b4ff-4c86-9e6f-5fd29484ad35%2FSetup.exe?v=1589264705910"><i
                     class="robot icon"></i>툴</a>
+            <a class="ui item" href="https://github.com/Vendetta-Team"><i class="github icon"></i>깃허브</a>
             <div class="ui inverted right simple dropdown item">
                 <i class="kr flag"></i>한국어
                 <i class="dropdown icon"></i>
@@ -228,10 +228,10 @@
             alert('이미 한국어입니다.')
         }
         setInterval(() => {
-            if(localStorage.getItem('lang') == "en"){
+            if (localStorage.getItem('lang') == "en") {
                 location.href = "../en/main.html"
             }
-        },1000)
+        }, 1000)
         var filter = "win16|win32|win64|mac|macintel";
 
         if (navigator.platform) {
@@ -241,7 +241,7 @@
         }
         window.scrollTo({ top: 0 });
         $(window).on('load', function () {
-            if(localStorage.getItem('lang') == "en"){
+            if (localStorage.getItem('lang') == "en") {
                 location.href = "../en/main.html"
             }
             $('#loading').transition('horizontal flip');
